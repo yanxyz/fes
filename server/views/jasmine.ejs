@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jasmine Spec Runner</title>
+  <% jasmineUrl = "/lib/jasmine-2.8.0" %>
+
+  <link rel="shortcut icon" type="image/png" href="<%- jasmineUrl %>/jasmine_favicon.png">
+  <link rel="stylesheet" href="<%- jasmineUrl %>/jasmine.css">
+  <style>
+    .jasmine_html-reporter {
+      font-size: 14px;
+    }
+  </style>
+
+  <script src="<%- jasmineUrl %>/jasmine.js"></script>
+  <script src="<%- jasmineUrl %>/jasmine-html.js"></script>
+  <script src="<%- jasmineUrl %>/boot.js"></script>
+
+</head>
+<body>
+  <% files.forEach(s => { %>
+  <p><%= s %></p>
+  <% }) %>
+
+  <% files.forEach(s => {  %>
+  <script src="/?file=<%= encodeURIComponent(s) %>" file="<%= s %>"></script>
+  <% }) %>
+
+</body>
+</html>

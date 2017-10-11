@@ -1,0 +1,16 @@
+{
+  "name": "fes-cli",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Ivan Yan",
+  "license": "MIT",
+  "private": true,
+  "repository": "yanxyz/fes",
+  "bin": {
+    "fes": "./cli.js"
+  },
+  "dependencies": {
+    "opn": "^5.0.0",
+    "yargs-parser": "^8.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "fes",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Ivan Yan",
+  "license": "MIT",
+  "private": true,
+  "repository": "yanxyz/fes",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-ejs": "^4.1.0"
+  }
+}
